@@ -64,5 +64,44 @@
     align-items: center;
     height: calc(100% - 3.65rem);
     cursor: pointer;
+}
 
+.side-nav-item {
+    width: 100%;
+    margin-bottom: 0.625rem;
+}
+
+.sidenav-nav-link {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    color: #F3F3F3;
+    text-decoration: none;
+    transition: all .3s ease;
+    border-radius: 0.625rem;
+}
+
+.sidenav-link-icon {
+    font-size: 22px;
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 0.5rem;
+    text-align: center;
+}
+
+.sidenav-link-text {
+    margin-left: 1.5rem;
+}
+
+.side-nav-item:hover .sidenav-nav-link {
+    background-color: #FFF;
+    color: #000;
+}
+
+.active {
+    background-color: #FFF;
+}
+
+.active .sidenav-link-icon, .active .sidenav-link-text {
+    color: #000
 }
